@@ -1,0 +1,81 @@
+body {
+    background: linear-gradient(135deg, #a2d9ff, #d0f0ff);
+    color: #000000;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* center vertically */
+    align-items: center;      /* center horizontally */
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.corner-left {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 360px;
+    height: auto;
+}
+
+.corner-right {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 160px;
+    height: 760px;
+}
+
+
+.corner-left:hover, .corner-right:hover {
+    transform: scale(0.95);
+    transition: 0.3s ease;
+}
+
+/* Title and text */
+h1 {
+    margin: 10px 0;
+    font-size: 2.2em;
+    color: #004d80;
+}
+p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+
+/* Back link */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #004d80;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    background-color: #007acc;
+}
+
+input[type="file"],
+input[type="submit"] {
+    background-color: #0288d1; /* blue */
+    color: white;
+    border: none;
+    border-radius: 10px; /* <--- makes buttons rounded */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+/* Hover effect */
+input[type="file"]:hover,
+input[type="submit"]:hover {
+    background-color: #0277bd;
+}

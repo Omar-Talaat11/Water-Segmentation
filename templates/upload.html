@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Left corner -->
+    <img src="{{ url_for('static', filename='images/satellite.png') }}" class="corner-left" alt="Satellite">
+    
+    <!-- Right corner -->
+    <img src="{{ url_for('static', filename='images/water.png') }}" class="corner-right" alt="Water">
+
+    <h2>Upload an image for segmentation</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <input type="submit" value="Upload & Segment">
+    </form>
+</body>
+</html>
